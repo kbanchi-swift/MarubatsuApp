@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		805EDF512735F540006F9A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF502735F540006F9A7E /* AppDelegate.swift */; };
+		805EDF532735F540006F9A7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF522735F540006F9A7E /* SceneDelegate.swift */; };
+		805EDF552735F540006F9A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF542735F540006F9A7E /* ViewController.swift */; };
+		805EDF582735F540006F9A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805EDF562735F540006F9A7E /* Main.storyboard */; };
+		805EDF5B2735F540006F9A7E /* MarubatsuApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF592735F540006F9A7E /* MarubatsuApp.xcdatamodeld */; };
+		805EDF5D2735F540006F9A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805EDF5C2735F540006F9A7E /* Assets.xcassets */; };
+		805EDF602735F540006F9A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805EDF5E2735F540006F9A7E /* LaunchScreen.storyboard */; };
+		805EDF6B2735F540006F9A7E /* MarubatsuAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF6A2735F540006F9A7E /* MarubatsuAppTests.swift */; };
+		805EDF752735F540006F9A7E /* MarubatsuAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF742735F540006F9A7E /* MarubatsuAppUITests.swift */; };
+		805EDF772735F540006F9A7E /* MarubatsuAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805EDF762735F540006F9A7E /* MarubatsuAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		805EDF672735F540006F9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 805EDF452735F540006F9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 805EDF4C2735F540006F9A7E;
+			remoteInfo = MarubatsuApp;
+		};
+		805EDF712735F540006F9A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 805EDF452735F540006F9A7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 805EDF4C2735F540006F9A7E;
+			remoteInfo = MarubatsuApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		805EDF4D2735F540006F9A7E /* MarubatsuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarubatsuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805EDF502735F540006F9A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		805EDF522735F540006F9A7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		805EDF542735F540006F9A7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		805EDF572735F540006F9A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		805EDF5A2735F540006F9A7E /* MarubatsuApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MarubatsuApp.xcdatamodel; sourceTree = "<group>"; };
+		805EDF5C2735F540006F9A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805EDF5F2735F540006F9A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		805EDF612735F540006F9A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		805EDF662735F540006F9A7E /* MarubatsuAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarubatsuAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		805EDF6A2735F540006F9A7E /* MarubatsuAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarubatsuAppTests.swift; sourceTree = "<group>"; };
+		805EDF702735F540006F9A7E /* MarubatsuAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarubatsuAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		805EDF742735F540006F9A7E /* MarubatsuAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarubatsuAppUITests.swift; sourceTree = "<group>"; };
+		805EDF762735F540006F9A7E /* MarubatsuAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarubatsuAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805EDF4A2735F540006F9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF632735F540006F9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF6D2735F540006F9A7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805EDF442735F540006F9A7E = {
+			isa = PBXGroup;
+			children = (
+				805EDF4F2735F540006F9A7E /* MarubatsuApp */,
+				805EDF692735F540006F9A7E /* MarubatsuAppTests */,
+				805EDF732735F540006F9A7E /* MarubatsuAppUITests */,
+				805EDF4E2735F540006F9A7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		805EDF4E2735F540006F9A7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805EDF4D2735F540006F9A7E /* MarubatsuApp.app */,
+				805EDF662735F540006F9A7E /* MarubatsuAppTests.xctest */,
+				805EDF702735F540006F9A7E /* MarubatsuAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805EDF4F2735F540006F9A7E /* MarubatsuApp */ = {
+			isa = PBXGroup;
+			children = (
+				805EDF502735F540006F9A7E /* AppDelegate.swift */,
+				805EDF522735F540006F9A7E /* SceneDelegate.swift */,
+				805EDF542735F540006F9A7E /* ViewController.swift */,
+				805EDF562735F540006F9A7E /* Main.storyboard */,
+				805EDF5C2735F540006F9A7E /* Assets.xcassets */,
+				805EDF5E2735F540006F9A7E /* LaunchScreen.storyboard */,
+				805EDF612735F540006F9A7E /* Info.plist */,
+				805EDF592735F540006F9A7E /* MarubatsuApp.xcdatamodeld */,
+			);
+			path = MarubatsuApp;
+			sourceTree = "<group>";
+		};
+		805EDF692735F540006F9A7E /* MarubatsuAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				805EDF6A2735F540006F9A7E /* MarubatsuAppTests.swift */,
+			);
+			path = MarubatsuAppTests;
+			sourceTree = "<group>";
+		};
+		805EDF732735F540006F9A7E /* MarubatsuAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				805EDF742735F540006F9A7E /* MarubatsuAppUITests.swift */,
+				805EDF762735F540006F9A7E /* MarubatsuAppUITestsLaunchTests.swift */,
+			);
+			path = MarubatsuAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805EDF4C2735F540006F9A7E /* MarubatsuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805EDF7A2735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuApp" */;
+			buildPhases = (
+				805EDF492735F540006F9A7E /* Sources */,
+				805EDF4A2735F540006F9A7E /* Frameworks */,
+				805EDF4B2735F540006F9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarubatsuApp;
+			productName = MarubatsuApp;
+			productReference = 805EDF4D2735F540006F9A7E /* MarubatsuApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		805EDF652735F540006F9A7E /* MarubatsuAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805EDF7D2735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuAppTests" */;
+			buildPhases = (
+				805EDF622735F540006F9A7E /* Sources */,
+				805EDF632735F540006F9A7E /* Frameworks */,
+				805EDF642735F540006F9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				805EDF682735F540006F9A7E /* PBXTargetDependency */,
+			);
+			name = MarubatsuAppTests;
+			productName = MarubatsuAppTests;
+			productReference = 805EDF662735F540006F9A7E /* MarubatsuAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		805EDF6F2735F540006F9A7E /* MarubatsuAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805EDF802735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuAppUITests" */;
+			buildPhases = (
+				805EDF6C2735F540006F9A7E /* Sources */,
+				805EDF6D2735F540006F9A7E /* Frameworks */,
+				805EDF6E2735F540006F9A7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				805EDF722735F540006F9A7E /* PBXTargetDependency */,
+			);
+			name = MarubatsuAppUITests;
+			productName = MarubatsuAppUITests;
+			productReference = 805EDF702735F540006F9A7E /* MarubatsuAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805EDF452735F540006F9A7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					805EDF4C2735F540006F9A7E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					805EDF652735F540006F9A7E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 805EDF4C2735F540006F9A7E;
+					};
+					805EDF6F2735F540006F9A7E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 805EDF4C2735F540006F9A7E;
+					};
+				};
+			};
+			buildConfigurationList = 805EDF482735F540006F9A7E /* Build configuration list for PBXProject "MarubatsuApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805EDF442735F540006F9A7E;
+			productRefGroup = 805EDF4E2735F540006F9A7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805EDF4C2735F540006F9A7E /* MarubatsuApp */,
+				805EDF652735F540006F9A7E /* MarubatsuAppTests */,
+				805EDF6F2735F540006F9A7E /* MarubatsuAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805EDF4B2735F540006F9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805EDF602735F540006F9A7E /* LaunchScreen.storyboard in Resources */,
+				805EDF5D2735F540006F9A7E /* Assets.xcassets in Resources */,
+				805EDF582735F540006F9A7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF642735F540006F9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF6E2735F540006F9A7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805EDF492735F540006F9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805EDF552735F540006F9A7E /* ViewController.swift in Sources */,
+				805EDF512735F540006F9A7E /* AppDelegate.swift in Sources */,
+				805EDF5B2735F540006F9A7E /* MarubatsuApp.xcdatamodeld in Sources */,
+				805EDF532735F540006F9A7E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF622735F540006F9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805EDF6B2735F540006F9A7E /* MarubatsuAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805EDF6C2735F540006F9A7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805EDF752735F540006F9A7E /* MarubatsuAppUITests.swift in Sources */,
+				805EDF772735F540006F9A7E /* MarubatsuAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		805EDF682735F540006F9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 805EDF4C2735F540006F9A7E /* MarubatsuApp */;
+			targetProxy = 805EDF672735F540006F9A7E /* PBXContainerItemProxy */;
+		};
+		805EDF722735F540006F9A7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 805EDF4C2735F540006F9A7E /* MarubatsuApp */;
+			targetProxy = 805EDF712735F540006F9A7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		805EDF562735F540006F9A7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805EDF572735F540006F9A7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		805EDF5E2735F540006F9A7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805EDF5F2735F540006F9A7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		805EDF782735F540006F9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		805EDF792735F540006F9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805EDF7B2735F540006F9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarubatsuApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		805EDF7C2735F540006F9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarubatsuApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		805EDF7E2735F540006F9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarubatsuApp.app/MarubatsuApp";
+			};
+			name = Debug;
+		};
+		805EDF7F2735F540006F9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarubatsuApp.app/MarubatsuApp";
+			};
+			name = Release;
+		};
+		805EDF812735F540006F9A7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarubatsuApp;
+			};
+			name = Debug;
+		};
+		805EDF822735F540006F9A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W2BQ443478;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.kbanchi1111.MarubatsuAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MarubatsuApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805EDF482735F540006F9A7E /* Build configuration list for PBXProject "MarubatsuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805EDF782735F540006F9A7E /* Debug */,
+				805EDF792735F540006F9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805EDF7A2735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805EDF7B2735F540006F9A7E /* Debug */,
+				805EDF7C2735F540006F9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805EDF7D2735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805EDF7E2735F540006F9A7E /* Debug */,
+				805EDF7F2735F540006F9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805EDF802735F540006F9A7E /* Build configuration list for PBXNativeTarget "MarubatsuAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805EDF812735F540006F9A7E /* Debug */,
+				805EDF822735F540006F9A7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		805EDF592735F540006F9A7E /* MarubatsuApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				805EDF5A2735F540006F9A7E /* MarubatsuApp.xcdatamodel */,
+			);
+			currentVersion = 805EDF5A2735F540006F9A7E /* MarubatsuApp.xcdatamodel */;
+			path = MarubatsuApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 805EDF452735F540006F9A7E /* Project object */;
+}
