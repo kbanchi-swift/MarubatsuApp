@@ -52,11 +52,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqS-qz-SYV">
+                                <rect key="frame" x="107" y="44" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cql-JW-WDU"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="問題を作成する"/>
+                                <connections>
+                                    <segue destination="YQn-zg-uTy" kind="show" id="5q4-8a-CRb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N8Z-Ej-DAL" secondAttribute="trailing" constant="20" id="0tX-vS-Euy"/>
+                            <constraint firstItem="QqS-qz-SYV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1zh-Qp-4G7"/>
                             <constraint firstItem="A6F-ir-QLb" firstAttribute="height" secondItem="INa-md-AvG" secondAttribute="height" id="3KL-dz-MMf"/>
                             <constraint firstItem="N8Z-Ej-DAL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Ggh-fS-v06"/>
                             <constraint firstItem="N8Z-Ej-DAL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Icq-Vs-qmF"/>
@@ -64,22 +77,131 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="INa-md-AvG" secondAttribute="bottom" constant="20" id="OHY-c9-Lcj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A6F-ir-QLb" secondAttribute="bottom" constant="20" id="SA0-da-W0o"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A6F-ir-QLb" secondAttribute="trailing" constant="20" id="Yx6-mG-QPs"/>
+                            <constraint firstItem="QqS-qz-SYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="imM-TH-jTl"/>
                             <constraint firstItem="A6F-ir-QLb" firstAttribute="leading" secondItem="INa-md-AvG" secondAttribute="trailing" constant="8" id="oGs-ok-Z23"/>
                             <constraint firstItem="A6F-ir-QLb" firstAttribute="width" secondItem="INa-md-AvG" secondAttribute="width" id="vTT-nh-KJ5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="noButton" destination="INa-md-AvG" id="GcB-cp-8c5"/>
                         <outlet property="questionLabel" destination="N8Z-Ej-DAL" id="OgE-vk-5CK"/>
+                        <outlet property="yesButton" destination="A6F-ir-QLb" id="a82-nR-Cwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="15.942028985507248" y="108.48214285714285"/>
         </scene>
+        <!--Add Question View Controller-->
+        <scene sceneID="pao-jx-jah">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YQn-zg-uTy" customClass="AddQuestionViewController" customModule="MarubatsuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7a-zp-ix4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9l-8z-Ju3">
+                                <rect key="frame" x="107" y="44" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SkR-di-A9W"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TOPに戻る"/>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="YQn-zg-uTy" eventType="touchUpInside" id="rwz-18-n9W"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ew-Uu-KuG">
+                                <rect key="frame" x="57" y="225" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="d0N-kR-z0L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-rw-iZp">
+                                <rect key="frame" x="157" y="309" width="100" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5RH-Lz-fes"/>
+                                    <constraint firstAttribute="width" constant="100" id="FDe-1g-6Gd"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="✗"/>
+                                    <segment title="○"/>
+                                </segments>
+                                <connections>
+                                    <action selector="tapSegmentedControl:" destination="YQn-zg-uTy" eventType="valueChanged" id="Rgs-Kv-8Uc"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiN-ff-khx">
+                                <rect key="frame" x="107" y="440" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vBm-o1-8TS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="vvN-Rq-ZzK"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="問題を保存する"/>
+                                <connections>
+                                    <action selector="tapSaveButton:" destination="YQn-zg-uTy" eventType="touchUpInside" id="d0E-sF-Mbv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6W-f8-yVn">
+                                <rect key="frame" x="107" y="511" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Epp-UF-qse"/>
+                                    <constraint firstAttribute="width" constant="200" id="oar-qf-72m"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="問題をすべて削除"/>
+                                <connections>
+                                    <action selector="tapDeleteButton:" destination="YQn-zg-uTy" eventType="touchUpInside" id="WWA-zi-ZrN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lJC-d7-XV2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8ew-Uu-KuG" firstAttribute="centerX" secondItem="B7a-zp-ix4" secondAttribute="centerX" id="7sm-Q3-42J"/>
+                            <constraint firstItem="m9l-8z-Ju3" firstAttribute="centerX" secondItem="B7a-zp-ix4" secondAttribute="centerX" id="7zj-AM-9Fg"/>
+                            <constraint firstItem="yiN-ff-khx" firstAttribute="top" secondItem="bvQ-rw-iZp" secondAttribute="bottom" constant="100" id="8kO-vl-fIs"/>
+                            <constraint firstItem="bvQ-rw-iZp" firstAttribute="centerX" secondItem="B7a-zp-ix4" secondAttribute="centerX" id="H97-b6-eF7"/>
+                            <constraint firstItem="yiN-ff-khx" firstAttribute="centerX" secondItem="B7a-zp-ix4" secondAttribute="centerX" id="NLn-YA-O3v"/>
+                            <constraint firstItem="p6W-f8-yVn" firstAttribute="top" secondItem="yiN-ff-khx" secondAttribute="bottom" constant="40" id="Scd-U3-8iS"/>
+                            <constraint firstItem="bvQ-rw-iZp" firstAttribute="top" secondItem="8ew-Uu-KuG" secondAttribute="bottom" constant="50" id="f0K-TP-Lc4"/>
+                            <constraint firstItem="8ew-Uu-KuG" firstAttribute="top" secondItem="m9l-8z-Ju3" secondAttribute="bottom" constant="150" id="nTb-q1-8IK"/>
+                            <constraint firstItem="m9l-8z-Ju3" firstAttribute="top" secondItem="lJC-d7-XV2" secondAttribute="top" id="o9C-6K-fef"/>
+                            <constraint firstItem="p6W-f8-yVn" firstAttribute="centerX" secondItem="B7a-zp-ix4" secondAttribute="centerX" id="y4d-Hb-a90"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hED-Ea-zwc"/>
+                    <connections>
+                        <outlet property="questionTextField" destination="8ew-Uu-KuG" id="OAS-CS-WaN"/>
+                        <outlet property="segmentedControl" destination="bvQ-rw-iZp" id="0pU-F0-0UO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60g-4f-zSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753.62318840579712" y="107.8125"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
