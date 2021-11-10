@@ -9,35 +9,63 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentQuestionNum: Int = 0
+    var questions: [[String: Any]] = []
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var noButton: UIButton!
+    @IBOutlet weak var yesButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+        let userDefaults = UserDefaults.standard
+        if (userDefaults.object(forKey: "questions") != nil) {
+            questions = userDefaults.object(forKey: "questions") as! [[String : Any]]
+        }
+
         showQuestion()
+
+        enableYesNoButton()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let userDefaults = UserDefaults.standard
+        if (userDefaults.object(forKey: "questions") != nil) {
+            questions = userDefaults.object(forKey: "questions") as! [[String : Any]]
+        }
+
+        showQuestion()
+
+        enableYesNoButton()
+
     }
 
-    @IBOutlet weak var questionLabel: UILabel!
-    
-    var currentQuestionNum: Int = 0
-    
-    let questions: [[String: Any]] = [
-        [
-            "question": "iPhoneアプリを開発する統合環境はZcodeである",
-                        "answer": false
-        ],
-        [
-            "question": "Xcode画面の右側にはユーティリティーズがある",
-                        "answer": true
-        ],
-        [
-            "question": "UILabelは文字列を表示する際に利用する",
-                        "answer": true
-        ],
-    ]
-    
     func showQuestion() {
-        let question = questions[currentQuestionNum]
-        if let que = question["question"] as? String {
-            questionLabel.text = que
+        if questions.count == 0 {
+            questionLabel.text = "問題がありません。問題を作りましょう。"
+        } else {
+            let question = questions[currentQuestionNum]
+            if let que = question["question"] as? String {
+                questionLabel.text = que
+            }
+        }
+    }
+    
+    func enableYesNoButton() {
+        if questions.count == 0 {
+            noButton.isEnabled = false
+            noButton.alpha = 0.3
+            yesButton.isEnabled = false
+            yesButton.alpha = 0.3
+        } else {
+            noButton.isEnabled = true
+            noButton.alpha = 1.0
+            yesButton.isEnabled = true
+            yesButton.alpha = 1.0
         }
     }
     
@@ -68,7 +96,7 @@ class ViewController: UIViewController {
         alert.addAction(close)
         present(alert, animated: true, completion: nil)
     }
-    
+        
     @IBAction func tappedNoButton(_ sender: Any) {
         checkAnswer(yourAnswer: false)
     }
